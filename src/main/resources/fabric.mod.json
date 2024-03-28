@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "wisteria",
+	"version": "${version}",
+	"name": "Wisteria",
+	"description": "Wisteria Mod, made by Tsukers!",
+	"authors": [
+		"Tsukers!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/wisteria/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tsukers.wisteria.Wisteria"
+		],
+		"client": [
+			"net.tsukers.wisteria.WisteriaClient"
+		],
+		"fabric-datagen": [
+			"net.tsukers.wisteria.WisteriaDataGenerator"
+		]
+	},
+	"mixins": [
+		"wisteria.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
